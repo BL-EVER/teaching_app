@@ -1,8 +1,18 @@
 version: '3.0'
 
 services:
-  echo-server:
-    image: echo-server
-    container_name: echo-server
-    ports: ['3001:3001']
+  keycloak-teaching-app:
+    image: jboss/keycloak:latest
+    container_name: keycloak-teaching-app
+    command: -Dkeycloak.profile.feature.upload_scripts=enabled
+    environment:
+      DB_VENDOR: h2
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin
+      KEYCLOAK_LOGLEVEL: DEBUG
+      ROOT_LOGLEVEL: DEBUG
+      PROXY_ADDRESS_FORWARDING: 'true'
+    ports:
+      - 8080:8080
+      - 8443:8443
 

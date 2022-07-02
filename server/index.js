@@ -4,6 +4,21 @@ require('dotenv').config();
 var bodyParser = require('body-parser');
 const cors = require('cors');
 const morgan = require('morgan');
+var baucis = require('baucis');
+var mongoose = require('mongoose');
+const session = require('express-session');
+
+const memoryStore = new session.MemoryStore();
+
+app.use(session({
+    secret: 'some secret',
+    resave: false,
+    saveUninitialized: true,
+    store: memoryStore
+}));
+
+const keycloak = require('./keycloakConfig.js').initKeycloak(memoryStore);
+app.use(keycloak.middleware());
 
 
 app.use(cors());
@@ -12,32 +27,38 @@ app.use(bodyParser.json());
 app.use(bodyParser.text());
 app.use(morgan('dev'));
 
-app.use(function (req, res, next) {
-    console.log(JSON.stringify(req.device.type));
-    next()
-})
-
-app.post('/', function (req, res) {
-    res.send(req.body)
-})
-app.get('/', function (req, res) {
-    res.send(`Hello World from ${req.hostname} on port ${PORT}`)
-})
-
-const fibonacci = (num) => {
-    if(num < 2) {
-        return num;
+mongoose.connect('mongodb://localhost:27017/teaching-app');
+var quiz = new mongoose.Schema(
+    {
+        title: String,
+        question: String,
+        answers: [String],
+        correctAnswer: String,
+        bundle: String,
     }
-    else {
-        return fibonacci(num-1) + fibonacci(num - 2);
-    }
-}
-app.get('/fibonacci/:fib', function (req, res) {
-	const n = fibonacci(parseInt(req.params.fib))
-    res.send(n.toString())
-})
+);
+
+var score = new mongoose.Schema({
+    user: String,
+    score: Number,
+    answers: [String],
+    bundles: [String],
+});
+mongoose.model('quiz', quiz);
+mongoose.model('score', score);
+
+//mongoose.model('quiz').create(quiz);
+//mongoose.model('score').create(score);
+
+
+baucis.rest('quiz');
+baucis.rest('score');
+
+
+app.use(keycloak.protect(['admin', 'user']));
+app.use('/api', baucis());
 
 const PORT = process.env.PORT || 3001
 app.listen(PORT, ()=>{
-    console.log(`Echo server listening on port: ${PORT}`);
+    console.log(`Server listening on port: ${PORT}`);
 });

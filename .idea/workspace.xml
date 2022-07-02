@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9852432e-6341-4882-9cd9-9fb1291a1e4e" name="Changes" comment="" />
+    <list default="true" id="9852432e-6341-4882-9cd9-9fb1291a1e4e" name="Changes" comment="ADD">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Layout/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Pages/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/keycloak.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/utils/PrivateRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realm-export.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/keycloakConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2BGSu8CiJw7uGDQlOR6MYL995pb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -23,9 +53,20 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/Bill/Desktop/teaching_app",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\Bill\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\221.5591.52\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bill\Desktop\teaching_app" />
+      <recent name="C:\Users\Bill\Desktop\teaching_app\client\src" />
+      <recent name="C:\Users\Bill\Desktop\teaching_app\client\src\utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bill\Desktop\teaching_app" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -35,7 +76,22 @@
       <option name="presentableId" value="Default" />
       <updated>1656531150127</updated>
       <workItem from="1656531151606" duration="132000" />
+      <workItem from="1656531306853" duration="685000" />
+      <workItem from="1656533863278" duration="148000" />
+      <workItem from="1656534030383" duration="70000" />
+      <workItem from="1656534111813" duration="17000" />
+      <workItem from="1656534131050" duration="8000" />
+      <workItem from="1656690918721" duration="9755000" />
+      <workItem from="1656772983972" duration="1228000" />
     </task>
+    <task id="LOCAL-00001" summary="ADD">
+      <created>1656533566280</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656533566280</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -51,5 +107,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ADD" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD" />
   </component>
 </project>
