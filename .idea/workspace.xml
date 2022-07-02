@@ -2,25 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9852432e-6341-4882-9cd9-9fb1291a1e4e" name="Changes" comment="ADD">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Layout/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Pages/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/keycloak.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/utils/PrivateRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realm-export.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/keycloakConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Pages/CreateTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Pages/HelpPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Pages/TakeTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Pages/ViewTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/utils/shuffle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/utils/some.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/utils/useAxios.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Layout/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/utils/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/PrivateRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +78,7 @@
       <workItem from="1656534111813" duration="17000" />
       <workItem from="1656534131050" duration="8000" />
       <workItem from="1656690918721" duration="9755000" />
-      <workItem from="1656772983972" duration="1228000" />
+      <workItem from="1656772983972" duration="20074000" />
     </task>
     <task id="LOCAL-00001" summary="ADD">
       <created>1656533566280</created>
@@ -91,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656533566280</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ADD">
+      <created>1656774245256</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656774245257</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -30,10 +30,8 @@ app.use(morgan('dev'));
 mongoose.connect('mongodb://localhost:27017/teaching-app');
 var quiz = new mongoose.Schema(
     {
-        title: String,
         question: String,
-        answers: [String],
-        correctAnswer: String,
+        answers: [{content: String, correct: Boolean}],
         bundle: String,
     }
 );
@@ -41,7 +39,7 @@ var quiz = new mongoose.Schema(
 var score = new mongoose.Schema({
     user: String,
     score: Number,
-    answers: [String],
+    numOfQuestions: Number,
     bundles: [String],
 });
 mongoose.model('quiz', quiz);

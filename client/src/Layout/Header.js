@@ -1,22 +1,24 @@
-import React from 'react';
-import {AppBar, Button, Toolbar, Typography} from "@mui/material";
+import React, {useState} from 'react';
+import {AppBar, Button, IconButton, Modal, Toolbar} from "@mui/material";
 import {useKeycloak} from "@react-keycloak/web";
+import {useNavigate} from "react-router-dom";
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 
 const Header = () => {
     const { keycloak, initialized } = useKeycloak();
+    const navigate = useNavigate();
 
-    if(!initialized) return(<>{JSON.stringify(initialized)}</>);
+    if(!initialized) return(<></>);
     return (
-        <div>
+        <div style={{marginBottom: "20px"}}>
             <AppBar position="static">
                 <Toolbar variant="dense">
-                    <Typography variant="h6" color="inherit" component="div">
-                        Education Platform
-                    </Typography>
+                    <Button variant="contained" onClick={() => navigate('/')}> Education Platform</Button>
                     {!keycloak.authenticated && (
                         <>
                             <Button
                                 variant="contained"
+                                style={{marginLeft: 'auto'}}
                                 onClick={() => keycloak.login()}
                             >
                                 Login
@@ -33,11 +35,13 @@ const Header = () => {
                     {!!keycloak.authenticated && (
                         <Button
                             variant="contained"
+                            style={{marginLeft: 'auto'}}
                             onClick={() => keycloak.logout()}
                         >
                             Logout ({keycloak.tokenParsed.preferred_username})
                         </Button>
                     )}
+                    <IconButton onClick={() => navigate('/help')} style={{color: 'white', marginLeft: '10px'}}><HelpOutlineIcon/></IconButton>
                 </Toolbar>
             </AppBar>
         </div>
