@@ -53,8 +53,15 @@ baucis.rest('quiz');
 baucis.rest('score');
 
 
-app.use(keycloak.protect(['admin', 'user']));
-app.use('/api', baucis());
+//app.use(keycloak.protect(['admin', 'user']));
+app.use('/api', keycloak.protect(['admin', 'user']), baucis());
+
+/* Serve static files */
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'build')));
+app.get('*', (req,res) =>{
+    res.sendFile(path.join(__dirname+'/build/index.html'));
+});
 
 const PORT = process.env.PORT || 3001
 app.listen(PORT, ()=>{
